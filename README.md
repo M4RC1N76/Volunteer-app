@@ -17,9 +17,9 @@ Welcome to the the Volunteering App Github repo
    > npm usually is installed when Node.js is installed. type npm --version to check if it is installed after installing Node.js in Command Terminal
 3. Go to the following link: https://reactnative.dev/docs/environment-setup - choose the 'React Native CLI Quickstart' tab, and follow the instructions for your platform
 
-   > **Note:** Where the instructions refer to a particular version of Android or the Android SDK platform, use **Android 10** and **SDK platform 29** instead of the more recent one.
+   > **Note** Where the instructions refer to a particular version of Android or the Android SDK platform, use **Android 10** and **SDK platform 29** instead of the more recent one.
 
-   > You can skip the sections of the page that describe setting up and running a new project, since we already have one
+   > **Note** You can skip the sections of the page that describe setting up and running a new project, since we already have one
 
 # Setup and first run
 
@@ -43,9 +43,9 @@ Welcome to the the Volunteering App Github repo
 
 8. At the command prompt type `npm install`
 
-   > **Note:** Inside the `app` folder there is `package-lock.json`. Everytime this is modified, it is advised to repeat step 6 before running the project.
+   > **Note** Inside the `app` folder there is `package-lock.json`. Everytime this is modified, it is advised to repeat step 6 before running the project.
 
-   > **Note:** you may need to run `npm install --legacy-peer-deps` or `npm install --force`
+   > **Note** you may need to run `npm install --legacy-peer-deps` or `npm install --force`
 
 9. If you are on a Mac and want to run the iOS build of the app, go to the `app/ios` folder in a terminal window. At the command prompt type `pod install`
 

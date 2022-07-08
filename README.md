@@ -16,8 +16,10 @@ Welcome to the the Volunteering App Github repo
 2. npm
    > npm usually is installed when Node.js is installed. type npm --version to check if it is installed after installing Node.js in Command Terminal
 3. Go to the following link: https://reactnative.dev/docs/environment-setup - choose the 'React Native CLI Quickstart' tab, and follow the instructions for your platform
-   > **Note:** Where the instructions refer to a particular version of Android or the Android SDK platform, use **Android 10** and **SDK platform 29** instead of the more recent one
-   > **Note:** You can skip the sections of the page that describe setting up and running a new project, since we already have one
+
+   > **Note:** Where the instructions refer to a particular version of Android or the Android SDK platform, use **Android 10** and **SDK platform 29** instead of the more recent one.
+
+   > You can skip the sections of the page that describe setting up and running a new project, since we already have one
 
 # Setup and first run
 
@@ -33,7 +35,7 @@ Welcome to the the Volunteering App Github repo
 
 5. Copy the `.env.example` file in the api root folder and name your new file `.env` in the same folder. Fill in the empty values (`""`) in your file for any credentials/settings (API keys for STA Jira API access, AirTable, etc)
 
-   > **Note** For security reasons, the credentials themselves are not provided here. Ask in the[volunteer-app](https://scottishtecharmy.slack.com/archives/C01SUL6K5E1) Slack channel when you join the dev group, and somebody will send them to you.
+   > **Note** For security reasons, the credentials themselves are not provided here. Ask in the [volunteer-app](https://scottishtecharmy.slack.com/archives/C01SUL6K5E1) Slack channel when you join the dev group, and somebody will send them to you.
 
 6. At the command prompt type `npm install` then `npm start` to start the Volunteer App API server. You should see a message that says `Volunteer App API is listening on port <number>` - make a note of the port number for later
 
@@ -42,13 +44,14 @@ Welcome to the the Volunteering App Github repo
 8. At the command prompt type `npm install`
 
    > **Note:** Inside the `app` folder there is `package-lock.json`. Everytime this is modified, it is advised to repeat step 6 before running the project.
+
    > **Note:** you may need to run `npm install --legacy-peer-deps` or `npm install --force`
 
 9. If you are on a Mac and want to run the iOS build of the app, go to the `app/ios` folder in a terminal window. At the command prompt type `pod install`
 
 10. Duplicate the example config file `app/src/Config/index.example.ts` and name your new file `app/src/Config/index.ts`
 
-    > **Note** If the app has difficulty connecting to the API, you may need to specify your private IP address and API port number in `app/src/Config/index.ts`. You can find your IP address by following the instructions for your platform [here](https://www.techbout.com/find-public-and-private-ip-address-44552/); you made a note of the API port number earlier. In the line `STA_BASE_URL: 'http://localhost:3000'`, replace `localhost` with your own IP, and replace `3000` with the port number. For example, if your IP is 192.168.1.50 and the API is listening on port 3000, the line should now read `STA_BASE_URL: 'http://192.168.1.50:3000'`.
+    > **Note** If the app has difficulty connecting to the API, you may need to specify your private IP address and API port number in `app/src/Config/index.ts`. You can find your IP address by following the instructions for your platform [here](https://www.techbout.com/find-public-and-private-ip-address-44552/); you made a note of the API port number earlier. In the line `STA_BASE_URL: 'http://localhost:3000'`, replace `localhost` with your own IP, and if necessary, replace `3000` with the port number. For example, if your IP is 192.168.1.50 and the API is listening on port 3000, the line should now read `STA_BASE_URL: 'http://192.168.1.50:3000'`.
 
 11. Type in command terminal: `npm run ios` or `npm run android`
 

@@ -17,7 +17,8 @@ Welcome to the the Volunteering App Github repo
    > npm usually is installed when Node.js is installed. type npm --version to check if it is installed after installing Node.js in Command Terminal
 3. Go to the following link: https://reactnative.dev/docs/environment-setup - choose the 'React Native CLI Quickstart' tab, and follow the instructions for your platform
 
-   > **Note** Where the instructions refer to a particular version of Android or the Android SDK platform, use **Android 10** and **SDK platform 29** instead of the more recent one.
+1. Ensure that you've gone through the following link for your particular platform: https://reactnative.dev/docs/environment-setup
+>**Note** When following the steps on React Native website make sure to choose the right instructions to build Native code i.e. React native CLI Quickstart, then MacOS or Windows or Linux.
 
    > **Note** You can skip the sections of the page that describe setting up and running a new project, since we already have one
 
@@ -50,6 +51,7 @@ Welcome to the the Volunteering App Github repo
 9. If you are on a Mac and want to run the iOS build of the app, go to the `app/ios` folder in a terminal window. At the command prompt type `pod install`
 
 10. Duplicate the example config file `app/src/Config/index.example.ts` and name your new file `app/src/Config/index.ts`
+    >**Note** If the app has difficulty connecting to the API, you may need specify your IP address in `index.ts`. Replace `localhost` in the line `STA_BASE_URL: 'http://localhost:3000'` with your own. Remember to add ':3000' just after your IP address (this is just an example 'http://18.134.220.155:3000')
 
     > **Note** If the app has difficulty connecting to the API, you may need to specify your private IP address and API port number in `app/src/Config/index.ts`. You can find your IP address by following the instructions for your platform [here](https://www.techbout.com/find-public-and-private-ip-address-44552/); you made a note of the API port number earlier. In the line `STA_BASE_URL: 'http://localhost:3000'`, replace `localhost` with your own IP, and if necessary, replace `3000` with the port number. For example, if your IP is 192.168.1.50 and the API is listening on port 3000, the line should now read `STA_BASE_URL: 'http://192.168.1.50:3000'`.
 
